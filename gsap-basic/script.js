@@ -30,12 +30,33 @@
 //     stagger:0.3
 // })
 
-gsap.to('#box1',{
+// gsap.to('#box1',{
+//     x:1600,
+//     duration:3,
+//     delay:1,
+//     rotate:360,
+//     // repeat:1 // its mean repeat the animation 1 time
+//     repeat:-1, // its mean playing the animation infinit
+//     yoyo:true, // this property work like yoyo...
+// })
+
+const tl =gsap.timeline()
+
+tl.to('#box1',{
     x:1600,
-    duration:3,
-    delay:1,
-    rotate:360,
-    // repeat:1 // its mean repeat the animation 1 time
-    repeat:-1, // its mean playing the animation infinit
-    yoyo:true, // this property work like yoyo...
+    duration:1.8,
+    repeat:-1,
+    yoyo:true
+})
+tl.to('#box2',{
+    x:1600,
+    duration:2,
+    repeat:-1,
+    yoyo:true
+})
+tl.to('#box3',{
+    x:1600,
+    duration:1.5,
+    repeat:-1,
+    yoyo:true
 })
