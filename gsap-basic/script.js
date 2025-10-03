@@ -42,21 +42,34 @@
 
 const tl =gsap.timeline()
 
-tl.to('#box1',{
-    x:1600,
-    duration:1.8,
-    repeat:-1,
-    yoyo:true
+// tl.to('#box1',{
+//     x:1600,
+//     duration:1.8,
+//     repeat:-1,
+//     yoyo:true
+// })
+// tl.to('#box2',{
+//     x:1600,
+//     duration:2,
+//     repeat:-1,
+//     yoyo:true
+// })
+// tl.to('#box3',{
+//     x:1600,
+//     duration:1.5,
+//     repeat:-1,
+//     yoyo:true
+// })
+
+tl.from('nav',{
+    y:-100,
+    opacity:0,
+    duration:0.8
 })
-tl.to('#box2',{
-    x:1600,
-    duration:2,
-    repeat:-1,
-    yoyo:true
-})
-tl.to('#box3',{
-    x:1600,
-    duration:1.5,
-    repeat:-1,
-    yoyo:true
+
+tl.from('p',{
+    y:-100,
+    opacity:0,
+    duration:0.8,
+    stagger:0.3
 })
